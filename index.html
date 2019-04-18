@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classroom3D</title>
+    <meta name="description" content="Classroom3D">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="main.77bb5cfd.css" rel="stylesheet">
+
+    <!-- 3d Truc -->
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script src="main.77bb5cfd.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BUILD2.json");
+    </script>
+  </head>
+  <body class="hp">
+    <header>
+      <h1><a href="index.html">Classroom3D</a></h1>
+      <a href="compt.html" class="compt"><img src="icon.3829cae8.svg" alt=""></a>
+    </header>
+
+    <div class="comptBox">
+
+    </div>
+
+    <p class="teaser">Classroom3D est un service permettant d’aménager votre salle de classe avec nos produits de qualité supérieur à l’aide d’un configurateur.</p>
+    <div class="intro">
+
+      <img src="clock.48625f3a.svg" class="intro__clock">
+      <div class="intro__tablau">
+        <div class="tableau__text tableau__text--1">
+          <span class="tableau__text__titre">Classroom3D</span><br>
+          <span>La manière la plus facile d'aménager sa salle de classe sans deplacement.</span><br>
+          <button class="intro__button button--start">Créer un classroom</button>
+        </div>
+
+        <div class="barProgression">
+          <div class="barProgression--active"></div>
+          <div class="barProgression__point barProgression__point--1"></div>
+          <div class="barProgression__point barProgression__point--2"></div>
+          <div class="barProgression__point barProgression__point--3"></div>
+          <div class="barProgression__point barProgression__point--4"></div>
+          <div class="barProgression__point barProgression__point--5"></div>
+          <div class="barProgression__point barProgression__point--6"></div>
+        </div>
+
+        <div class="tableau__text tableau__commande--1">
+          <span class="tableau__text__titre">Début du projet</span><br>
+          <form action="">
+            <!-- <div class="box">
+              <input type="text"></input>
+              <lable class="imput__description">Name of the School:</lable>
+            </div> -->
+            <div class="box">
+              <input type="text input--2">
+              <lable class="imput__description">Nom du projet:</lable>
+            </div>
+          </form>
+          <button class="button--valide button__commande--1">Continuer</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--2">
+          <span class="tableau__text__titre">Configurer le plan de classe</span><br>
+          <!--<img src="img/mapgenerator.png" class="checkview checkview--generatormap">-->
+          <span class="">Chosier entre le deux option</span>
+          <button class="button--valide button__commande--2-upload">Importer le plan de classe</button>
+          <button class="button--valide button__commande--2">Créer le plan de classe</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--3">
+          <span class="tableau__text__titre">Taille du classe</span><br>
+          <form action="">
+            <div class="box box--mt">
+              <input type="text" class="input--age">
+              <lable class="imput__description">Numbre des élèves:</lable>
+            </div>
+          </form>
+          <button class="button--valide button__commande--3">Continuer</button>
+        </div>
+
+        <!--3D width:1303px; height:610px; margin-top:-15px  Truc-->
+        <div class="tableau__text tableau__commande--4" style="">
+          <div id="gameContainer" style=" margin-top:-15px; width:1385px; height: 730px;"></div>
+          <button class="button--valide button__commande--4">Valider</button>
+        </div>
+        <!--  End 3D Truc-->
+
+        <div class="tableau__text tableau__commande--5">
+          <span class="tableau__text__titre">Vue de chaque élève</span><br>
+          <span class="">Mettez vous à la place de vos élèves</span>
+          <form action="">
+            <div class="box box--mt">
+              <input type="text" class="input--age">
+              <lable class="imput__description">Moyenne d'age des élèves</lable>
+            </div>
+          </form>
+          <button class="button--valide button__commande--5">Continuer</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--5-1">
+          <span class="tableau__text__titre">Vue d'élève (1/32)</span>
+          <img src="view--1.c70c3c6f.png" class="checkview">
+          <div class="buttonBox">
+            <button class="button--alert button__commande--5-1--go">Modifier</button>
+            <button class="button--valide button__commande--5-1--back">Satisfait</button>
+          </div>
+          <span class="text--small">Passer</span>
+        </div>
+
+        <div class="tableau__text tableau__commande--5-2">
+          <span class="tableau__text__titre">Vue d'élève (2/32)</span>
+          <img src="view--2.94848d54.png" class="checkview">
+          <div class="buttonBox">
+            <button class="button--alert button__commande--5-2--go">Modifier</button>
+            <button class="button--valide button__commande--5-2--back">Satisfait</button>
+          </div>
+          <span class="text--small">Passer</span>
+        </div>
+
+        <div class="tableau__text tableau__commande--6">
+          <span class="tableau__text__titre">Resultat des vues</span>
+          <img src="map.8c602566.svg" class="checkview checkview--resultat">
+          <div class="buttonBox">
+            <button class="button--alert button__commande--6--go">Modifier</button>
+            <button class="button--valide button__commande--6--back">Satisfait</button>
+          </div>
+        </div>
+
+        <div class="tableau__text tableau__commande--7">
+          <span class="tableau__text__titre">Livraison et Installation</span><br>
+          <form action="">
+            <div class="box">
+                <input type="text">
+                <lable class="imput__description">Jour de Livraison :</lable>
+              </div>
+              <div class="box">
+                <input type="text input--2">
+                <lable class="imput__description">Heure de Livraison :</lable>
+              </div>
+          </form>
+          <button class="button--valide button__commande--7">Valider</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--8">
+          <span class="tableau__text__titre">Commande</span><br>
+          <table>
+            <tr>
+              <th>Meubles</th>
+              <th>Number</th> 
+              <th>Prix</th>
+            </tr>
+            <tr>
+              <td>Table</td>
+              <td>32</td> 
+              <td>2000€</td>
+            </tr>
+            <tr>
+              <td>Chaise</td>
+              <td>32</td> 
+              <td>2000€</td>
+            </tr>
+            <tr>
+              <td>Etagere</td>
+              <td>3</td> 
+              <td>300€</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td> 
+              <td>2600€</td>
+            </tr>
+          </table>
+          <button class="button--valide button__commande--8">Payer</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--9">
+          <span class="tableau__text__titre">Merci pour votre commande</span><br>
+          <span class="">Vous recevrez un mail avec toutes les informations nécéssaires</span>
+          <a href="index.html"><button class="button__commande--9">Retour à l'accueil</button></a>
+        </div>
+
+      </div>
+      <img src="teacher.c6158324.svg" class="intro__teacher">
+      <img src="rang.ed444214.svg" class="intro__rang intro__rang--left">
+      <img src="rang.ed444214.svg" class="intro__rang intro__rang--right">
+    </div>
+    <p><i class="arrow down"></i></p>
+
+    <div class="test"></div>
+
+    <section class="avantages">
+      <h2>Comment ça marche ?</h2>
+      <div class="boxs--avantages">
+        <!-- <div class="box--avantage">
+          <img src="img/cube.svg" alt="">
+          <p>selecter des mueble super qualitatif</p>
+        </div> -->
+        <div class="box--avantage">
+          <img src="measuring-tape.c9d1e773.svg" alt="">
+          <p>Ne laisser plus de doute sur les dimension</p>
+        </div>
+        <div class="box--avantage">
+          <img src="cube.4abea024.svg" alt="">
+          <p>aménager votre salles de classe en 3D</p>
+        </div>
+        <div class="box--avantage">
+            <img src="visibility.35851cd9.svg" alt="">
+          <p>rendu concret de l’espace</p>
+        </div>
+      </div>
+      <button class="">Video-Preview du Generator</button>
+    </section>
+
+    <div class="bg">
+      <p class="teaser teaser--2">Ils nous font confiance 20/20</p>
+      <section class="new">
+          <div class="slideshow-container">
+            <div class="mySlides fade--1">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="room--1.bde16f92.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Merci, grâce au module 3d que vous proposez, j'ai pu concevoir mes salles de classes avec facilité ! La commande est conforme à ce que j'ai visualisé. Je recommande !</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directrice Claire Mont,</span><br>Paris 12eme Lycee Louis</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mySlides fade--2">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="room--2.0ca35886.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Incroyable, grâce au module 3d que vous proposez, j'ai pu concevoir mes salles de classes avec facilité ! La commande est conforme à ce que j'ai visualisé. Je recommande ! "</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directeur Neuilly Plaisance,</span><br>Paris 5eme Sorbonne</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mySlides fade--3">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="room--3.a797fb36.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Magnifique, grâce au module 3d que vous proposez, j'ai pu concevoir mes salles de classes avec facilité ! La commande est conforme à ce que j'ai visualisé. Je recommande !"</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directrise Lara Hericot,</span><br>Nice</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div class="box--dot">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+          <!-- <div class="new__textbox">
+            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+            <div class="box--name">
+              <div class="icon--directrice"></div>
+              <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+            </div>
+          </div> -->
+        </section>
+    </div>
+
+    <section class="moeble">
+      <h2>Nos Bestsellers</h2>
+      <div class="box--moeble">
+        <div class="box">
+          <img src="stuhl.31b28b44.png" class="stuhl">
+          <a href="chaire.html"><button class="button--valide">Découvrir</button>
+        </a></div>
+        <div class="box">
+          <img src="tisch.118a24e6.png" class="tisch">
+          <a href="table.html"><button class="button--valide">Découvrir</button>
+        </a></div>
+        <div class="box">
+          <img src="regal.d0b95310.png" class="regal">
+          <a href="etager.html"><button class="button--valide">Découvrir</button>
+        </a></div>
+        <div class="box">
+          <img src="schrank.5af3aed1.png" class="schrank">
+          <a href="gaderobe.html"><button class="button--valide">Découvrir</button>
+        </a></div>
+      </div>
+      <button class="intro__button end__button">Tous les Mobiliers</button>
+    </section>
+
+    <section class="end">
+      <p class="teaser teaser--3">
+          Convaincu de la simplicité de notre service ?</p>
+      <button class="intro__button end__button end__buttonsuper">Créer un classroom</button>
+      
+      <footer>
+        <nav>
+          <a href="#">Contact</a>
+          <a href="#">Conditions générales</a>
+        </nav>
+      </footer>
+
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.d573be0b.js"></script>
+
+  </body>
+</html>
+
+
+
